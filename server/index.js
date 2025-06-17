@@ -31,7 +31,7 @@ app.post("/register", async (req, res) => {
     res.json(userDoc);
   } catch (e) {
     console.log(e);
-    res.status(300).json(e);
+    res.status(400).json(e);
   }
 });
 
@@ -49,7 +49,7 @@ app.post("/login", async (req, res) => {
       });
     });
   } else {
-    res.status(300).json("wrong credentials");
+    res.status(400).json("wrong credentials");
   }
 });
 
