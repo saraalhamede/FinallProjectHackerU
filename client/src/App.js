@@ -1,3 +1,4 @@
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./component/Layout.jsx";
 import IndexPage from "./pages/IndexPage.jsx";
